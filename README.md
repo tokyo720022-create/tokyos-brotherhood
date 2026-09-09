@@ -133,6 +133,7 @@ Tokyo's Brotherhood
     ├── AniList
     └── MyAnimeList
 
+
     Design Principles
 Local-first
 User library, history, settings, cache, and progress should primarily live on the user's own device.
@@ -194,25 +195,4 @@ License
 
 License: To be decided.
 
-
-### 2. One thing about the emojis
-
-You asked earlier for **no emoji in the app's script/UI** except Extensions and Settings icons.
-
-That's still our rule. 👍
-
-The README can use a little visual formatting, but **the actual application labels remain clean**.
-
-### 3. Check the project
-
-Save `README.md`, then in the terminal run:
-
-```bash
-git status
-
-You should see something like:
-modified:   src/app.rs
-modified:   ...
-new file:   README.md
-Because we added the repository-manifest code after our last Git checkpoint.
 
