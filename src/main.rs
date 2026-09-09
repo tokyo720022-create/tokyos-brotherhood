@@ -2,6 +2,7 @@ use adw::Application;
 use adw::gio::prelude::{ApplicationExt, ApplicationExtManual};
 
 mod app;
+mod library;
 
 fn main() {
     let application = Application::builder()
