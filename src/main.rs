@@ -1,8 +1,12 @@
-use adw::Application;
 use adw::gio::prelude::{ApplicationExt, ApplicationExtManual};
+use adw::Application;
 
 mod app;
+mod extensions;
+mod history;
 mod library;
+mod media;
+mod sources;
 
 fn main() {
     let application = Application::builder()

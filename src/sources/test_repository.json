@@ -1,0 +1,26 @@
+{
+  "id": "tokyo.community",
+  "name": "Tokyo's Community Extensions",
+  "description": "Test extension repository for Tokyo's Brotherhood.",
+  "website": "https://example.com",
+  "extensions": [
+    {
+      "id": "example.anime",
+      "name": "Example Anime",
+      "version": "1.0.0",
+      "media_type": "anime",
+      "description": "Test anime source.",
+      "icon_url": null,
+      "download_url": null
+    },
+    {
+      "id": "example.manga",
+      "name": "Example Manga",
+      "version": "1.0.0",
+      "media_type": "manga",
+      "description": "Test manga source.",
+      "icon_url": null,
+      "download_url": null
+    }
+  ]
+}
