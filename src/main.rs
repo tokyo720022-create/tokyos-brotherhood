@@ -1,21 +1,14 @@
-use adw::prelude::*;
-use adw::{Application, ApplicationWindow};
+use adw::Application;
+use adw::gio::prelude::{ApplicationExt, ApplicationExtManual};
+
+mod app;
 
 fn main() {
-    let app = Application::builder()
+    let application = Application::builder()
         .application_id("com.tokyo.brotherhood")
         .build();
 
-    app.connect_activate(|app| {
-        let window = ApplicationWindow::builder()
-            .application(app)
-            .title("Anime & Manga")
-            .default_width(1000)
-            .default_height(700)
-            .build();
+    application.connect_activate(app::build_ui);
 
-        window.present();
-    });
-
-    app.run();
+    application.run();
 }
